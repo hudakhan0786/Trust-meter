@@ -1,0 +1,15 @@
+{
+  "_comment": "Two illustrative, originally-written sample articles bundled for --demo mode. They are not real news and are not independently verified.",
+
+  "suspicious_article": {
+    "url": "https://usapoliticstoday.com/miracle-fruit-shocking-secret-doctors-hate",
+    "headline": "YOU WON'T BELIEVE What This MIRACLE Fruit Does To Your Body!!! Doctors HATE This One Trick!!!",
+    "body_text": "You won't believe this shocking miracle trick! This miracle trick is shocking doctors everywhere because doctors hate this miracle trick. Doctors hate this shocking miracle so much that doctors hate every person who shares this miracle trick. This shocking miracle trick shocked everyone who tried this miracle trick. Doctors hate this miracle, doctors hate this trick, and doctors hate that this shocking miracle keeps going viral. This miracle trick is shocking, this miracle is shocking, and this trick is shocking. You won't believe how shocking this miracle trick really is. Doctors hate this trick so much doctors tried to have this shocking miracle banned. Share this shocking miracle trick before doctors hate it even more. This miracle, this trick, this shocking miracle trick - doctors hate it, doctors hate it, doctors hate it."
+  },
+
+  "reference_sample_article": {
+    "url": "https://sample-news.example/economy/interest-rate-outlook",
+    "headline": "Federal Reserve Holds Interest Rates Steady Amid Mixed Economic Signals",
+    "body_text": "The Federal Reserve opted to leave its benchmark interest rate unchanged on Wednesday, citing a combination of resilient employment figures and persistent inflation pressures that have complicated the central bank's policy outlook. Officials noted that consumer spending has moderated in recent months, while manufacturing output remained roughly flat compared with the previous quarter. In a statement following the two-day meeting, the committee said it would continue to monitor incoming data before making further adjustments to borrowing costs. Economists surveyed ahead of the decision had largely anticipated the pause, pointing to uncertainty around trade policy and its potential effect on supply chains. Several analysts cautioned that a premature rate cut could reignite inflationary pressure, while others warned that prolonged restrictive policy risks slowing hiring further. The central bank's next scheduled meeting will take place in six weeks, and officials indicated that any future decisions would remain dependent on labor market and inflation data released between now and then."
+  }
+}

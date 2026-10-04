@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Analysis history — TRUSTMETER</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+{% include '_ambient.html' %}
+<header class="nav">
+  <a class="brand" href="/" aria-label="Trustmeter home">{% include '_brand.html' %}</a>
+  <div class="nav-tools"><button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">◐</button><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button></div>
+  <nav id="site-nav"><a href="/#method">Methodology</a><a class="nav-cta" href="/#analyze">Analyze an article <span>↗</span></a></nav>
+</header>
+<main class="history-page wrap">
+  <div class="eyebrow">LOCAL ANALYSIS LOG</div><h1>History</h1>
+  <p class="lead">Every saved check, with its score, source and exact time.</p>
+  {% if rows %}
+  <div class="history-toolbar"><label for="history-search">Search reports</label><input id="history-search" type="search" placeholder="Search title, source or time…"></div>
+  <div class="history-list" id="history-list">
+    {% for row in rows %}
+    <a class="history-row reveal" href="{{ url_for('history_report', log_id=row.log_id) }}" aria-label="Open report for {{ row.headline }} checked {{ row.scored_at }}">
+      <span class="history-score">{{ row.final_trust_score|round|int }}<small>/100</small></span>
+      <span class="history-info"><b>{{ row.headline }}</b><small>{{ row.domain if not row.domain.endswith('.invalid') else 'Pasted article · source not provided' }}<span class="history-time">Checked <time datetime="{{ row.scored_at }}">{{ row.scored_at[:19].replace('T', ' ') }} UTC</time></span></small></span>
+      <span class="history-verdict">{{ row.verdict }}</span><span class="history-arrow" aria-hidden="true">→</span>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="empty-search" hidden>No matching reports. Try another search.</p>
+  {% else %}
+  <div class="empty-state"><span>◈</span><h2>No analyses saved yet</h2><p>Run an analysis to see its report listed here.</p><a class="button primary" href="/#analyze">Analyze an article <span>→</span></a></div>
+  {% endif %}
+</main>
+<footer class="wrap footer"><a class="brand" href="/" aria-label="Trustmeter home">{% include '_brand.html' %}</a><span>Local history is stored in this project’s SQLite database.</span></footer>
+<script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</body>
+</html>

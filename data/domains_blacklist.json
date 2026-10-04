@@ -1,0 +1,15 @@
+{
+  "_comment": "Local blacklist of domains with a documented history of fabricated or misleading stories. Illustrative seed list for the project - extend from services like NewsGuard/Media Bias Fact Check for production use.",
+  "domains": [
+    "worldnewsdailyreport.com",
+    "empirenews.net",
+    "nationalreport.net",
+    "civictribune.com",
+    "newswatch33.com",
+    "the-postillon.com",
+    "dailybuzzlive.com",
+    "newsbreakshere.com",
+    "usapoliticstoday.com",
+    "react365.com"
+  ]
+}

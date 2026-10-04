@@ -1,0 +1,24 @@
+{
+  "_comment": "Local whitelist of domains treated as high-trust news sources. Extend freely - one domain per line, lowercase, no 'www.' prefix.",
+  "domains": [
+    "reuters.com",
+    "apnews.com",
+    "bbc.com",
+    "bbc.co.uk",
+    "npr.org",
+    "nytimes.com",
+    "wsj.com",
+    "washingtonpost.com",
+    "theguardian.com",
+    "economist.com",
+    "bloomberg.com",
+    "ft.com",
+    "pbs.org",
+    "cbc.ca",
+    "aljazeera.com",
+    "afp.com",
+    "propublica.org",
+    "nature.com",
+    "science.org"
+  ]
+}
